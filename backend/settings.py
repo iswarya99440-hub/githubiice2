@@ -30,9 +30,9 @@ if ENV_FILE.exists():
 SECRET_KEY = 'django-insecure-+a7=w)yv0mg!83dl9auhx+21-0k2d@_@gel=qd39j97l^bo5ks'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
