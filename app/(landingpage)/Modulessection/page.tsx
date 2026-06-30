@@ -113,14 +113,11 @@ const ModuleCard: React.FC<{ mod: Module; delay: string }> = ({ mod, delay }) =>
     >
         {/* Image + category badge */}
         <div className="relative">
-            <Image
-                src={mod.image}
-                alt={mod.title}
-                width={480}
-                height={220}
-                className="w-full object-cover"
-                style={{ height: "200px", display: "block" }}
-            />
+           <img
+             src={mod.image}
+             alt={mod.title}
+             className="w-full h-[200px] object-cover"
+     />
             <span
                 className="absolute top-3 left-3 text-xs font-semibold px-3 py-1 rounded-full text-white"
                 style={{
