@@ -18,7 +18,8 @@ export const authOptions = {
 
         try {
           console.log("Attempting login with:", credentials.email);
-          
+          console.log("API URL:", process.env.NEXT_PUBLIC_API_URL);
+
           const response = await axios.post(
             `${process.env.NEXT_PUBLIC_API_URL}/api/auth/login/`,
             {
