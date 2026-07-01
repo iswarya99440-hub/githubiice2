@@ -1,5 +1,27 @@
 import React from 'react';
+const FacebookIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M22 12a10 10 0 10-11.56 9.88v-7H7.9v-2.88h2.54V9.8c0-2.5 1.5-3.88 3.78-3.88 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.88h-2.34v7A10 10 0 0022 12z"/>
+  </svg>
+);
 
+const LinkedInIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M4.98 3.5A2.5 2.5 0 102.5 6a2.5 2.5 0 002.48-2.5zM3 8h4v13H3zm7 0h3.8v1.8h.1c.5-.9 1.8-1.8 3.7-1.8 4 0 4.7 2.6 4.7 6V21h-4v-6c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21h-4z"/>
+  </svg>
+);
+
+const InstagramIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5zm5 5a5 5 0 110 10 5 5 0 010-10zm6-1a1.2 1.2 0 110 2.4A1.2 1.2 0 0118 6z"/>
+  </svg>
+);
+
+const TwitterIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.9 2H22l-6.8 7.8L23 22h-6.2l-4.9-6.3L6.3 22H3.2l7.3-8.4L1 2h6.3l4.4 5.8z"/>
+  </svg>
+);
 const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
@@ -20,24 +42,25 @@ const socialLinks = [
   {
     label: "Facebook",
     href: "https://www.facebook.com/",
-    icon: (/* Facebook SVG */),
+    icon: <FacebookIcon />,   // உங்க existing Facebook SVG
   },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/",
-    icon: (/* LinkedIn SVG */),
+    icon: <LinkedInIcon />,   // உங்க existing LinkedIn SVG
   },
   {
     label: "Instagram",
     href: "https://www.instagram.com/",
-    icon: (/* Instagram SVG */),
+    icon: <InstagramIcon />,  // உங்க existing Instagram SVG
   },
   {
     label: "Twitter",
     href: "https://x.com/",
-    icon: (/* Twitter SVG */),
+    icon: <TwitterIcon />,    // உங்க existing Twitter SVG
   },
 ];
+
 
     return (
         <footer
